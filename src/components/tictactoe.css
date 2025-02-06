@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+.continer{
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    margin-top: 40px;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title span{
+    color: #041d3b;
+    padding-left: 15px;
+
+}
+.reset {background-image: linear-gradient(to right, #5e93dd 0%, #177ca7  51%, #23219c  100%)}
+         .reset {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Inter', sans-serif; /* Apply font family to the button */
+          }
+
+          .reset:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+@keyframes boxAnimation {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.boxes {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #FAB2FF 10%, #1904E5 100%);
+    border: 4px solid #0f1b21;
+    border-radius: 12px;
+    cursor: pointer;
+    
+    animation: boxAnimation 0.5s ease-in-out;
+}
+/* .boxes:hover {
+    transform: scale(1.05);
+    background-color: #2a4a5b;
+} */
+.board {
+    height: 500px;
+    width: 464px;
+    display: flex;
+    margin: auto;
+}
+.boxes img{
+    margin: 50px 50px;
+}
+.title img{
+    padding: 20px 20px;
+    height: 50px;
+
+}
